@@ -29,7 +29,7 @@ async function run() {
     let tags = tl.getDelimitedInput("tags", '\n', true);
 
     let buildId = -1;
-    let bId = tl.getVariable("Build.BuildId");
+    let bId = tl.getInput("buildId", true);
     // just for tests
     if (bId === "-1") {
         bId = null;
